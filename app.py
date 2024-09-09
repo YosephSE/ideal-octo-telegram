@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 # Use environment variable for the API key to enhance security
-genai_api_key = os.getenv("GENAI_API_KEY")
+genai_api_key = "AIzaSyALCNtsVDYmmY9O-hn4FYI1-gonxdeLNME"
 if not genai_api_key:
     raise ValueError("API key for Google Generative AI is not set")
 genai.configure(api_key=genai_api_key)
